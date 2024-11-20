@@ -1,0 +1,29 @@
+﻿julio 
+
+martin
+
+bali
+
+När jag har gjort en ändring i en fil
+(Kolla vilken branch jag är i)
+
+git add <filnamn>
+git commit -m "beskrivning"
+git push 
+
+
+Hämta hem ändring
+
+git pull
+
+
+Lägga till branch
+
+git branch <branchNamn>
+(behöver man en commit? tror inte)
+git push --set-upstream origin <branchNamn>
+
+
+Gå till branch
+
+git checkout <branch>
