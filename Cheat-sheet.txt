@@ -1,0 +1,86 @@
+# Initiera ett nytt Git-repository
+git init
+
+# Klona ett befintligt repository
+git clone <repository-url>
+
+# Lägg till ändringar till staging
+git add <filnamn>
+git add .
+
+# Skapa en ny commit
+git commit -m "Commit-meddelande"
+git commit --amend
+
+# Visa status för arbetskatalogen
+git status
+
+# Visa commit-historiken
+git log
+git log --oneline
+git log -p
+
+# Hantera fjärr-repository
+git remote add origin <url>
+git remote -v
+
+# Pusha ändringar till fjärr-repositoryt
+git push origin <branch>
+git push --set-upstream origin <branch>
+git push -f
+
+# Hämta och slå samman ändringar från fjärr-repositoryt
+git pull origin <branch>
+git pull --rebase
+
+# Hämta ändringar från fjärr-repositoryt utan att slå samman
+git fetch origin
+git fetch origin <branch>
+
+# Hantera lokala branchar
+git branch
+git branch <branch-namn>
+git branch -d <branch-namn>
+
+# Byt branch
+git checkout <branch-namn>
+git checkout -b <branch-namn>
+
+# Byt branch (modern syntax)
+git switch <branch-namn>
+git switch -c <branch-namn>
+
+# Slå samman en branch till den aktuella
+git merge <branch-namn>
+
+# Reorganisera commits genom att spela om dem
+git rebase <branch-namn>
+
+# Återställ staging eller commits
+git reset <commit> --soft
+git reset <commit> --hard
+
+# Ångra en tidigare commit
+git revert <commit>
+
+# Temporärt spara ändringar utan att committa
+git stash
+git stash apply
+git stash pop
+
+# Visa skillnader
+git diff
+git diff <commit>
+git diff <branch1> <branch2>
+
+# Hantera taggar
+git tag <tag-namn>
+git tag -d <tag-namn>
+git push origin <tag-namn>
+
+# Visa vem som gjort vilka ändringar
+git blame <filnamn>
+
+# Rensa oversionerade filer
+git clean -f
+git clean -fd
